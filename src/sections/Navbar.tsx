@@ -7,7 +7,7 @@ function Navbar() {
     const sectionLinks = [
         { name: 'About', link: '/#about' },
         { name: 'Experience', link: '/#experience' },
-        { name: 'work', link: '/#work' },
+        { name: 'Projects', link: '/#projects' },
         { name: 'Contact', link: '/#contact' }
     ]
 
