@@ -6,11 +6,13 @@ import {
     FaInstagram,
     FaTwitter
 } from 'react-icons/fa'
+import { SiLeetcode } from 'react-icons/si'
 
 function Socials() {
     const socialLinks = [
         { name: 'Github', icon: <FaGithub /> , link: 'https://www.github.com/iamhrugved' },
         { name: 'LinkedIn', icon: <FaLinkedin /> , link: 'https://www.linkedin.com/in/hrugvedpawar/' },
+        { name: 'Leetcode', icon: <SiLeetcode /> , link: 'https://leetcode.com/iamhrugved/' },
         { name: 'Instagram', icon: <FaInstagram /> , link: 'https://www.instagram.com/hrugved.pawar/' },
         { name: 'Twitter', icon: <FaTwitter /> , link: 'https://www.twitter.com/iamhrugved' }
     ]

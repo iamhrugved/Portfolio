@@ -1,5 +1,7 @@
 import Email from '@/components/Email'
 import Socials from '@/components/Socials'
+import About from '@/sections/About'
+import Experience from '@/sections/Experience'
 import Home from '@/sections/Home'
 import Navbar from '@/sections/Navbar'
 import React from 'react'
@@ -12,6 +14,8 @@ const Index = () => {
       <Email />
       <main>
         <Home />
+        <About />
+        <Experience />
       </main>
     </div>
   )
