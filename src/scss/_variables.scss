@@ -1,6 +1,6 @@
 :root {
     --navy-shadow: rgba(2, 12, 27, 0.7);
-    --background-color: #101820;
+    
     --lightest-navy: #233554;
     --light-navy: #112240;
     --dark-slate: #495670;
@@ -8,6 +8,7 @@
     --light-slate: #ccd6f6;
     --lightest-slate: #a8b2d1;
     --theme-color: #FF6F61;
+    --background-color: #fcfcfc;
 
     --tsm: 13px;
     --tsm1: 14px;
@@ -24,4 +25,15 @@
         --tx2large: 25px;
         // --tgiant: 40px;
     }
+}
+
+[data-theme="dark"] {
+    --lightest-navy: #233554;
+    --light-navy: #112240;
+    --dark-slate: #495670;
+    --slate: #8892b0;
+    --light-slate: #ccd6f6;
+    --lightest-slate: #a8b2d1;
+    --theme-color: #FF6F61;
+    --background-color: #101820;
 }

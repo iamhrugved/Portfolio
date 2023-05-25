@@ -65,7 +65,7 @@ function Projects() {
     },
   ];
   return (
-    <div className="projects" id="work">
+    <div className="projects" id="projects">
       <motion.div
         className="title"
         initial="hidden"

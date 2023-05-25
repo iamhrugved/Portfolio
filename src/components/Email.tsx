@@ -1,18 +1,22 @@
-import Link from 'next/link'
-import React from 'react'
-
+import React from "react";
+import { motion } from "framer-motion";
 function Email() {
     return (
-        <div className='email'>
-            <Link
-                href='mailto:pawar.hrugved@gmail.com'
-                className='email-link'
-                target='_blank'
-            >
+        <motion.div
+            className="email"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+                duration: 0.3,
+                ease: "easeInOut",
+                delay: 1.95,
+            }}
+        >
+            <a href="mailto:pawar.hrugved@gmail.com" className="email-link">
                 pawar.hrugved@gmail.com
-            </Link>
-        </div>
-    )
+            </a>
+        </motion.div>
+    );
 }
 
-export default Email
+export default Email;
