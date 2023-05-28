@@ -9,7 +9,7 @@
 
     &-title {
         color: var(--theme-color);
-        font-size: var(--tsm2);
+        font-size: var(--tlarge);
         font-family: var(--fira-code);
     }
     &-title-large {
@@ -17,8 +17,20 @@
         font-family: var(--raleway);
         color: var(--light-slate);
     }
+    &-title-typewriter {
+        color: var(--lightest-slate);
+        font-size: var(--tminigiant);
+        &-text {
+            color: var(--theme-color);
+            font-size: var(--tminigiant);
+            font-family: var(--fira-code);
+        }
+    }
+  
     &-title-sub {
         color: var(--lightest-slate);
+        font-size: var(--tminigiant2);
+        
     }
     &-text {
         color: var(--slate);

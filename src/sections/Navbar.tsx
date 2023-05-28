@@ -1,22 +1,16 @@
 import Logo from '@/components/Logo'
 import Link from 'next/link'
-import Button from '@/components/Button'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { CgClose } from "react-icons/cg";
 import React, { useEffect, useState, useContext } from 'react'
 import { motion } from "framer-motion";
-import { ThemeContext, Theme } from '@/Context/ThemeContext';
-import ThemeSwitch from '@/components/ThemeSwitch';
+import ThemeSwitch from '@/components/ThemeSwitch'
 
 function Navbar() {
 
-
-    const [isDark, setDark] = useState(true);
-
-    const { theme, toggleTheme } = useContext(ThemeContext);
     const [navbarVisible, setnavbarVisible] = useState(false)
     const [responsiveNavVisible, setResponsiveNavVisible] = useState(false);
-
+    console.log("responsiveNavVisible", responsiveNavVisible)
     useEffect(() => {
         window.addEventListener('scroll', () => {
             window.pageYOffset > 100 ? setnavbarVisible(true) : setnavbarVisible(false);
@@ -28,10 +22,10 @@ function Navbar() {
         links.forEach((link) => {
             link.addEventListener("click", () => setResponsiveNavVisible(false));
         });
-        const nav = document.querySelector(".nav-items");
-        nav?.addEventListener("click", (e) => {
-            e.stopPropagation();
-        });
+        // const nav = document.querySelector(".nav-items");
+        // nav?.addEventListener("click", (e) => {
+        //     e.stopPropagation();
+        // });
         const html = document.querySelector("html");
         html?.addEventListener("click", (e) => {
             setResponsiveNavVisible(false);
@@ -51,7 +45,7 @@ function Navbar() {
         { name: 'About', link: '/#about' },
         { name: 'Experience', link: '/#experience' },
         { name: 'Projects', link: '/#projects' },
-        { name: 'Contact', link: '/#contact' }
+        { name: 'Contact', link: '/#contact' },
     ]
 
     return (
@@ -118,8 +112,9 @@ function Navbar() {
                             </motion.li>
                         ))}
                     </ul>
+
                     <motion.div
-                        className="nav-items-button"
+                        className="nav-items-list-item"
                         initial={{ opacity: 0, y: -25 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{
@@ -128,12 +123,12 @@ function Navbar() {
                             delay: 0.6,
                         }}
                     >
-                        <Button text="Resume" link="http://localhost:3000/resume.pdf" />
+                        <ThemeSwitch />
                     </motion.div>
 
                 </div>
             </div>
-            <ThemeSwitch />
+
         </nav>
     )
 }

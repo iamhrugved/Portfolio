@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Button from "@/components/Button";
 import { useInView, motion } from "framer-motion";
 
 function About() {

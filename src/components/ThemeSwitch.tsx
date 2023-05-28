@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
+import { DarkModeSwitch } from 'react-toggle-dark-mode';
 
 export default function ThemeSwitch() {
     const [mounted, setMounted] = useState(false);
@@ -14,13 +15,13 @@ export default function ThemeSwitch() {
     }
 
     return (
-        <>
-            <p>Current theme: {resolvedTheme}</p>
-            <button
-                onClick={() => setTheme(resolvedTheme === "light" ? "dark" : "light")}
-            >
-                <span>Toggle Theme</span>
-            </button>
-        </>
+        <DarkModeSwitch
+            style={{ marginRight: "-10rem" }}
+            checked={resolvedTheme === "dark"}
+            onChange={() => setTheme(resolvedTheme === "light" ? "dark" : "light")}
+            size={30}
+            moonColor='#FF6F61'
+            sunColor='#ff5e00'
+        />
     );
 }
