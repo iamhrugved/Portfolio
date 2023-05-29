@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Button from "@/components/Button";
 import { useInView, motion } from "framer-motion";
+import Tech from "@/components/Tech";
 
 function About() {
 
@@ -54,18 +54,8 @@ function About() {
                     <p className="about-grid-info-text">
                         Here are a few technologies I’ve been working with recently:
                     </p>
-                    <ul className="about-grid-info-list">
-                        <li className="about-grid-info-list-item">React</li>
-                        <li className="about-grid-info-list-item">Angular</li>
-                        <li className="about-grid-info-list-item">Next.js</li>
-                        <li className="about-grid-info-list-item">TypeScript</li>
-                        <li className="about-grid-info-list-item">JavaScript</li>
-                        <li className="about-grid-info-list-item">Redux Toolkit</li>
-                        <li className="about-grid-info-list-item">Node.js</li>
-                        <li className="about-grid-info-list-item">Python</li>
-                        <li className="about-grid-info-list-item">Java</li>
-                        <li className="about-grid-info-list-item">CSS</li>
-                    </ul>
+                   <br />
+
                 </div>
                 <div className="about-grid-photo">
                     <div className="overlay"></div>
@@ -75,6 +65,7 @@ function About() {
                     </div>
                 </div>
             </div>
+            <Tech />
         </motion.div>
     )
 }
