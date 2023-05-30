@@ -1,6 +1,7 @@
 import Button from "@/components/Button";
 import React from "react";
 import { motion } from "framer-motion";
+import { Reveal } from "@/components/Reveal";
 
 function Contact() {
   return (
@@ -16,13 +17,19 @@ function Contact() {
         hidden: { opacity: 0, y: 0 },
       }}
     >
+      <Reveal>
       <h2 className="contact-title">What&apos;s Next?</h2>
+      </Reveal>
+      <Reveal>
       <h2 className="contact-sub-title">Get In Touch</h2>
+      </Reveal>
+      <Reveal>
       <p className="contact-text">
         Although I’m not currently looking for any new opportunities, my inbox
         is always open. Whether you have a question or just want to say hi, I’ll
         try my best to get back to you!
       </p>
+      </Reveal>
       <div className="contact-cta">
         <Button link="mailto:pawar.hrugved@gmail.com" text="Say Hello" />
       </div>
