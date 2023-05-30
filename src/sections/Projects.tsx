@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 import { motion } from "framer-motion";
+import { Reveal } from "@/components/Reveal";
 
 function Projects() {
   const projectsData = [
@@ -77,7 +78,9 @@ function Projects() {
           hidden: { opacity: 0, y: 0 },
         }}
       >
+        <Reveal>
         <h2>Some Things I’ve Built</h2>
+        </Reveal>
       </motion.div>
       <div className="projects-container">
         {projectsData.map(
@@ -109,34 +112,47 @@ function Projects() {
                   </div>
                 </div>
                 <div className="project-info">
+                  <Reveal>
                   <p className="project-info-overline">Featured Project</p>
+                  </Reveal>
+                  <Reveal>
                   <h3 className="project-info-title">{projectName}</h3>
+                  </Reveal>
+                  <Reveal>
                   <div className="project-info-description">
                     <p>{projectDescription}</p>
                   </div>
+                  </Reveal>
+                  
                   <ul className="project-info-tech-list">
                     {projectTech.map((tech) => (
                       <li className="project-info-tech-list-item" key={tech}>
-                        {tech}
+                        <Reveal>
+                        <p>{tech}</p>
+                        </Reveal>
                       </li>
                     ))}
                   </ul>
                   <ul className="project-info-links">
                     <li className="project-info-links-item">
+                      <Reveal>
                       <Link
                         href={projectExternalLinks.github}
                         className="project-info-links-item-link"
                       >
                         <FiGithub />
                       </Link>
+                      </Reveal>
                     </li>
                     <li className="project-info-links-item">
+                      <Reveal>
                       <Link
                         href={projectExternalLinks.externalLink}
                         className="project-info-links-item-link"
                       >
                         <FiExternalLink />
                       </Link>
+                      </Reveal>
                     </li>
                   </ul>
                 </div>

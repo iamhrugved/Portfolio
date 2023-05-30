@@ -1,5 +1,5 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 import BallCanvas from "./Ball";
 
 const Tech = () => {
@@ -58,13 +58,25 @@ const Tech = () => {
     },
   ];
   return (
-    <div className='flex flex-row flex-wrap justify-center gap-10'>
-      {technologies.map((technology) => (
-        <div className='w-28 h-28' key={technology.name}>
-          <BallCanvas icon={technology.icon} />
-        </div>
-      ))}
-    </div>
+    <motion.div
+      className='flex flex-row flex-wrap justify-center gap-10'
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{ duration: 0.9 }}
+      variants={{
+        visible: { opacity: 1, y: -50 },
+        hidden: { opacity: 0, y: 0 },
+      }}
+    >
+      
+        {technologies.map((technology) => (
+          <div className='w-28 h-28' key={technology.name}>
+            <BallCanvas icon={technology.icon} />
+          </div>
+        ))}
+     
+    </motion.div>
   );
 };
 

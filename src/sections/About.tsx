@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useInView, motion } from "framer-motion";
 import Tech from "@/components/Tech";
+import { Reveal } from "@/components/Reveal";
 
 function About() {
 
@@ -26,11 +27,15 @@ function About() {
                 hidden: { opacity: 0, y: 0 },
             }}
         >
+            <Reveal>
             <div className="title">
                 <h2>About Me</h2>
             </div>
+            </Reveal>
+            
             <div className="about-grid">
                 <div className="about-grid-info">
+                <Reveal>
                     <p className="about-grid-info-text">
                         Bonjour! My name is Hrugved, and I am a Mechanical Engineer turned Software Engineer.
                         After graduating from University of Pune in India, I started my software development career at{" "}
@@ -38,6 +43,8 @@ function About() {
                         After completing the training at world&apos;s largest corporate training center at Mysore, India, I was ready to embark on my journey as a software engineer.
                         After spending about 2 years at Infosys, I decided to move to the United States to pursue my Masters in Software Engineering.
                     </p>
+                    </Reveal>
+                    <Reveal>
                     <p className="about-grid-info-text">
                         Fast-forward to today, I specialize in designing and developing
                         high-quality solutions that delight our clients and exceed their
@@ -46,14 +53,17 @@ function About() {
                             inLumon.
                         </Link>
                     </p>
-
+                    </Reveal>
+                    <Reveal>
                     <p className="about-grid-info-text">
                         Additionally, I have built several Web Development projects.
                     </p>
-                    
+                    </Reveal>
+                    <Reveal>
                     <p className="about-grid-info-text">
                         Here are a few technologies I’ve been working with recently:
                     </p>
+                    </Reveal>
                    <br />
 
                 </div>

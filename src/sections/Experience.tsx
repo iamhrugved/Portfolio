@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import { motion } from "framer-motion";
+import { Reveal } from "@/components/Reveal";
 
 function Experience() {
 
@@ -71,27 +72,34 @@ function Experience() {
                 hidden: { opacity: 0, y: 0 },
             }}
         >
+            <Reveal>
             <div className="title">
                 <h2>Where I&apos;ve Worked</h2>
             </div>
+            </Reveal>
             <div className="container">
                 <ul className="exp-slider">
                     <div className="underline"></div>
                     {experiences.map((experience, index) => {
                         return (
+                            
                             <li
                                 className={`exp-slider-item ${index === selected && "exp-slider-item-selected"
                                     }`}
                                 onClick={() => setSelected(index)}
                                 key={experience.name}
                             >
+                                <Reveal>
                                 <span>{experience.name}</span>
+                                </Reveal>
                             </li>
+                           
                         );
                     })}
                 </ul>
                 <div className="exp-details">
                     <div className="exp-details-position">
+                        <Reveal>
                         <h3>
                             <span>{experiences[selected].role}</span>
                             <span className="exp-details-position-company">
@@ -101,15 +109,20 @@ function Experience() {
                                 </Link>
                             </span>
                         </h3>
+                        </Reveal>
+                        <Reveal>
                         <p className="exp-details-range">
                             {experiences[selected].start} - {experiences[selected].end}
                         </p>
+                        </Reveal>
                         <ul className="exp-details-list">
                             {experiences[selected].description.map(
                                 (description, index) => (
+                                  
                                     <li key={index} className="exp-details-list-item">
-                                        {description}
+                                        <Reveal><p>{description}</p></Reveal>
                                     </li>
+                                    
                                 )
                             )}
                         </ul>
