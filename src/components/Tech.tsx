@@ -29,20 +29,8 @@ const Tech = () => {
       icon: 'nodejs.png',
     },
     {
-      name: "Express JS",
-      icon: 'expressjs.png',
-    },
-    {
-      name: "GraphQL",
-      icon: 'graphql.png',
-    },
-    {
       name: "HTML 5",
       icon: 'html.png',
-    },
-    {
-      name: "CSS 3",
-      icon: 'css.png',
     },
     {
       name: "SASS",
@@ -61,10 +49,6 @@ const Tech = () => {
       icon: 'nextjs.png',
     },
     {
-      name: "Redux Toolkit",
-      icon: 'redux.png',
-    },
-    {
       name: "SQL",
       icon: 'sql.png',
     },
@@ -73,20 +57,8 @@ const Tech = () => {
       icon: 'mongodb.png',
     },
     {
-      name: "Firebase",
-      icon: 'firebase.png',
-    },
-    {
       name: "Git",
       icon: 'git.png',
-    },
-    {
-      name: "JIRA",
-      icon: 'jira.png',
-    },
-    {
-      name: "Jenkins",
-      icon: 'jenkins.png',
     },
     {
       name: "AWS",
