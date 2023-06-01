@@ -25,9 +25,8 @@ function Contact() {
       </Reveal>
       <Reveal>
       <p className="contact-text">
-        Although I’m not currently looking for any new opportunities, my inbox
-        is always open. Whether you have a question or just want to say hi, I’ll
-        try my best to get back to you!
+      Have a job opportunity or freelance gig you think would be a great fit? 
+      I&apos;d love to hear more about it. Get in touch, and let&apos;s discuss the details!
       </p>
       </Reveal>
       <div className="contact-cta">

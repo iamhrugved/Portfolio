@@ -5,12 +5,16 @@ import BallCanvas from "./Ball";
 const Tech = () => {
   const technologies = [
     {
-      name: "HTML 5",
-      icon: 'html.png',
+      name: "Python",
+      icon: 'python.png',
     },
     {
-      name: "CSS 3",
-      icon: 'css.png',
+      name: 'Java',
+      icon: 'java.png',
+    },
+    {
+      name: "C++",
+      icon: 'cpp.png',
     },
     {
       name: "JavaScript",
@@ -21,39 +25,75 @@ const Tech = () => {
       icon: 'typescript.png',
     },
     {
+      name: "Node JS",
+      icon: 'nodejs.png',
+    },
+    {
+      name: "Express JS",
+      icon: 'expressjs.png',
+    },
+    {
+      name: "GraphQL",
+      icon: 'graphql.png',
+    },
+    {
+      name: "HTML 5",
+      icon: 'html.png',
+    },
+    {
+      name: "CSS 3",
+      icon: 'css.png',
+    },
+    {
+      name: "SASS",
+      icon: 'sass.png',
+    },
+    {
+      name: "Angular",
+      icon: 'angular.png',
+    },
+    {
       name: "React JS",
       icon: 'reactjs.png',
+    },
+    {
+      name: "Next JS",
+      icon: 'nextjs.png',
     },
     {
       name: "Redux Toolkit",
       icon: 'redux.png',
     },
     {
-      name: "Tailwind CSS",
-      icon: 'tailwind.png',
-    },
-    {
-      name: "Node JS",
-      icon: 'nodejs.png',
+      name: "SQL",
+      icon: 'sql.png',
     },
     {
       name: "MongoDB",
       icon: 'mongodb.png',
     },
     {
-      name: "Three JS",
-      icon: 'threejs.svg',
+      name: "Firebase",
+      icon: 'firebase.png',
     },
     {
-      name: "git",
+      name: "Git",
       icon: 'git.png',
     },
     {
-      name: "figma",
-      icon: 'figma.png',
+      name: "JIRA",
+      icon: 'jira.png',
     },
     {
-      name: "docker",
+      name: "Jenkins",
+      icon: 'jenkins.png',
+    },
+    {
+      name: "AWS",
+      icon: 'aws.png',
+    },
+    {
+      name: "Docker",
       icon: 'docker.png',
     },
   ];
