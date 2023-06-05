@@ -29,7 +29,7 @@ function About() {
         >
 
             <div className="title">
-                <Reveal width = "800px">
+                <Reveal width="100%">
                     <h2>About Me</h2>
                 </Reveal>
             </div>

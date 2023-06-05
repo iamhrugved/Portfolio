@@ -72,7 +72,7 @@ function Experience() {
                 hidden: { opacity: 0, y: 0 },
             }}
         >
-            <Reveal width='800px'>
+            <Reveal width="100%">
             <div className="title">
                 <h2>Where I&apos;ve Worked</h2>
             </div>

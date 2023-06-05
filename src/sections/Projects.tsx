@@ -85,7 +85,7 @@ function Projects() {
           hidden: { opacity: 0, y: 0 },
         }}
       >
-        <Reveal width="800px">
+        <Reveal width="100%">
         <h2>Some Things I’ve Built</h2>
         </Reveal>
       </motion.div>
