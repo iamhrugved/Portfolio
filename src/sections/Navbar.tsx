@@ -13,7 +13,6 @@ function Navbar() {
     const [responsiveNavVisible, setResponsiveNavVisible] = useState(false);
     const navbarRef = useRef(null);
 
-    console.log("responsiveNavVisible", responsiveNavVisible)
     useEffect(() => {
         window.addEventListener('scroll', () => {
             window.pageYOffset > 100 ? setnavbarVisible(true) : setnavbarVisible(false);

@@ -11,7 +11,6 @@
         font-size: var(--tbase);
         font-family: var(--fira-code);
         font-weight: 300;
-       
     }
     .contact-sub-title {
         font-size: var(--tgiant);
@@ -31,6 +30,42 @@
         margin-top: 1rem;
         .btn {
             padding: 1rem 2rem;
+        }
+    }
+}
+
+.contact-social-icons {
+    position: relative;
+    bottom: 15rem;
+    left: 0;
+
+    &-list {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        justify-content: center; // Center the icons horizontally
+
+        &-item {
+            font-size: var(--txlarge);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s ease-in-out;
+
+            &-link {
+                padding: 10px;
+                color: var(--lightest-slate);
+                transition: 0.3s ease-in-out;
+                outline: 2px dashed transparent;
+
+                &:hover,
+                &:focus {
+                    color: var(--theme-color);
+                    transform: translateY(-5px);
+                    outline-color: var(--theme-color);
+                }
+            }
         }
     }
 }
