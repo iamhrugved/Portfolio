@@ -1,6 +1,6 @@
 .about {
     margin: 15rem 0;
-    
+
     .title {
         font-family: var(--raleway);
         color: var(--lightest-slate);
@@ -19,9 +19,9 @@
                 display: block;
                 position: absolute;
                 top: 20px;
-                width: 300px;
-                height: 2px;
-                margin-left: 220px;
+                width: 350px;
+                height: 3px;
+                margin-left: 180px;
                 background-color: var(--lightest-navy);
             }
         }
@@ -71,34 +71,44 @@
             width: max-content;
             height: max-content;
             &:hover {
-                    transform: translate3d(0, -2px, 0) scale(1.02);
-                    transition: 0.3s ease-in-out;
+                transform: translate3d(0, -2px, 0) scale(1.02);
+                transition: 0.3s ease-in-out;
                 .overlay-border {
                     top: 0.5rem;
                     left: 0.5rem;
                 }
+                img {
+                    filter: none;
+                }
             }
-            
+            .overlay {
+                transition: 0.3s ease-in-out;
+                z-index: 1;
+                position: absolute;
+                height: 400px;
+                width: 400px;
+                border-radius: 0.5rem;
+            }
             .overlay-border {
                 z-index: -3;
                 height: 100%;
                 width: 100%;
                 position: absolute;
-                border: 3px solid var(--theme-color);
+                border: 2px solid var(--theme-color);
                 top: 1rem;
                 left: 1rem;
-                border-radius: 0.2rem;
+                border-radius: 0.5rem;
                 transition: 0.3s ease-in-out;
             }
             &-container {
                 position: relative;
                 height: 400px;
-                width: 350px;
+                width: 400px;
                 object-fit: cover;
                 img {
                     z-index: 0;
                     transition: 0.3s ease-in-out;
-                    border-radius: 0.2rem;  
+                    border-radius: 0.2rem;
                 }
             }
         }

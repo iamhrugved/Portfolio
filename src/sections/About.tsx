@@ -27,55 +27,57 @@ function About() {
                 hidden: { opacity: 0, y: 0 },
             }}
         >
-            <Reveal>
+
             <div className="title">
-                <h2>About Me</h2>
+                <Reveal width = "800px">
+                    <h2>About Me</h2>
+                </Reveal>
             </div>
-            </Reveal>
-            
+
+
             <div className="about-grid">
                 <div className="about-grid-info">
-                <Reveal>
-                    <p className="about-grid-info-text">
-                        Bonjour! My name is Hrugved, and I am a Mechanical Engineer turned Software Engineer.
-                        After graduating from University of Pune in India, I started my software development career at{" "}
-                        <Link href="https://infosys.com" className="link" target="_blank">Infosys.</Link>
-                    </p>
+                    <Reveal>
+                        <p className="about-grid-info-text">
+                            Bonjour! My name is Hrugved, and I am a Mechanical Engineer turned Software Engineer.
+                            After graduating from University of Pune in India, I started my software development career at{" "}
+                            <Link href="https://infosys.com" className="link" target="_blank">Infosys.</Link>
+                        </p>
                     </Reveal>
                     <Reveal>
-                    <p className="about-grid-info-text">
-                        After completing the training at world&apos;s largest corporate training center at Mysore, India, I was ready to embark on my journey as a software engineer.
-                        After spending about 2 years at Infosys, I decided to move to the United States to pursue my Masters in Software Engineering.
-                    </p>
+                        <p className="about-grid-info-text">
+                            After completing the training at world&apos;s largest corporate training center at Mysore, India, I was ready to embark on my journey as a software engineer.
+                            After spending about 2 years at Infosys, I decided to move to the United States to pursue my Masters in Software Engineering.
+                        </p>
                     </Reveal>
                     <Reveal>
-                    <p className="about-grid-info-text">
-                        Fast-forward to today, I specialize in designing and developing
-                        high-quality solutions that delight our clients and exceed their
-                        expectations at{" "}
-                        <Link href="https://inlumon.com" className="link" target="_blank">
-                            inLumon.
-                        </Link>
-                    </p>
+                        <p className="about-grid-info-text">
+                            Fast-forward to today, I specialize in designing and developing
+                            high-quality solutions that delight our clients and exceed their
+                            expectations at{" "}
+                            <Link href="https://inlumon.com" className="link" target="_blank">
+                                inLumon.
+                            </Link>
+                        </p>
                     </Reveal>
                     <Reveal>
-                    <p className="about-grid-info-text">
-                        Additionally, I have built several Web Development projects.
-                    </p>
+                        <p className="about-grid-info-text">
+                            Additionally, I have built several Web Development projects.
+                        </p>
                     </Reveal>
                     <Reveal>
-                    <p className="about-grid-info-text">
-                        Here are a few technologies I’ve been working with recently:
-                    </p>
+                        <p className="about-grid-info-text">
+                            Here are a few technologies I’ve been working with recently:
+                        </p>
                     </Reveal>
-                   <br />
+                    <br />
 
                 </div>
                 <div className="about-grid-photo">
                     <div className="overlay"></div>
                     <div className="overlay-border"></div>
                     <div className="about-grid-photo-container">
-                        <Image src="/hrugved.jpg" alt="profile" fill />
+                        <Image src="/hrugvedCasual.jpg" alt="profile" fill />
                     </div>
                 </div>
             </div>

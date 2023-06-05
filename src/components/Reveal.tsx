@@ -3,7 +3,7 @@ import { motion, useInView, useAnimation } from "framer-motion";
 
 interface Props {
   children: JSX.Element;
-  width?: "fit-content" | "100%";
+  width?: "fit-content" | "100%" | string;
 }
 
 export const Reveal = ({ children, width = "fit-content" }: Props) => {
