@@ -1,5 +1,6 @@
 .about {
     margin: 15rem 0;
+    
     .title {
         font-family: var(--raleway);
         color: var(--lightest-slate);
@@ -103,7 +104,6 @@
         }
     }
     @media screen and (max-width: 1080px) {
-        margin: 5rem 0;
         &-grid {
             &-photo {
                 .overlay {
@@ -123,7 +123,6 @@
         }
     }
     @media screen and (max-width: 768px) {
-        margin: 5rem auto;
         .title {
             h2 {
                 &::after {

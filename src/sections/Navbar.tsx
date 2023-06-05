@@ -1,8 +1,9 @@
 import Logo from '@/components/Logo'
 import Link from 'next/link'
+import { Link as ScrollLink } from 'react-scroll';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { CgClose } from "react-icons/cg";
-import React, { useEffect, useState, useContext } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import { motion } from "framer-motion";
 import ThemeSwitch from '@/components/ThemeSwitch'
 
@@ -10,6 +11,8 @@ function Navbar() {
 
     const [navbarVisible, setnavbarVisible] = useState(false)
     const [responsiveNavVisible, setResponsiveNavVisible] = useState(false);
+    const navbarRef = useRef(null);
+
     console.log("responsiveNavVisible", responsiveNavVisible)
     useEffect(() => {
         window.addEventListener('scroll', () => {
@@ -49,7 +52,7 @@ function Navbar() {
     ]
 
     return (
-        <nav>
+        <nav ref={navbarRef}>
             <div className={`wrapper ${navbarVisible ? "blur-nav" : ""}`}>
                 <motion.div
                     className="brand"
@@ -106,9 +109,10 @@ function Navbar() {
                                     delay: 0.3 + index * 0.1,
                                 }}
                             >
-                                <Link href={link} className="nav-items-list-item-link">
+                                <ScrollLink 
+                                to={name.toLowerCase()}  offset={-200} className="nav-items-list-item-link">
                                     {name}
-                                </Link>
+                                </ScrollLink>
                             </motion.li>
                         ))}
                     </ul>
