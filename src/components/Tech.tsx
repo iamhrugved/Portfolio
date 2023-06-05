@@ -6,67 +6,67 @@ const Tech = () => {
   const technologies = [
     {
       name: "Python",
-      icon: 'python.png',
+      icon: 'tech/python.png',
     },
     {
       name: 'Java',
-      icon: 'java.png',
+      icon: 'tech/java.png',
     },
     {
       name: "C++",
-      icon: 'cpp.png',
+      icon: 'tech/cpp.png',
     },
     {
       name: "JavaScript",
-      icon: 'javascript.png',
+      icon: 'tech/javascript.png',
     },
     {
       name: "TypeScript",
-      icon: 'typescript.png',
+      icon: 'tech/typescript.png',
     },
     {
       name: "Node JS",
-      icon: 'nodejs.png',
+      icon: 'tech/nodejs.png',
     },
     {
       name: "HTML 5",
-      icon: 'html.png',
+      icon: 'tech/html.png',
     },
     {
       name: "SASS",
-      icon: 'sass.png',
+      icon: 'tech/sass.png',
     },
     {
       name: "Angular",
-      icon: 'angular.png',
+      icon: 'tech/angular.png',
     },
     {
       name: "React JS",
-      icon: 'reactjs.png',
+      icon: 'tech/reactjs.png',
     },
     {
       name: "Next JS",
-      icon: 'nextjs.png',
+      icon: 'tech/nextjs.png',
     },
     {
       name: "SQL",
-      icon: 'sql.png',
+      icon: 'tech/sql.png',
     },
     {
       name: "MongoDB",
-      icon: 'mongodb.png',
+      icon: 'tech/mongodb.png',
     },
     {
       name: "Git",
-      icon: 'git.png',
+      icon: 'tech/git.png',
     },
     {
       name: "AWS",
-      icon: 'aws.png',
+      icon: 'tech/aws.png',
     },
     {
       name: "Docker",
-      icon: 'docker.png',
+      icon: 'tech/docker.png',
     },
   ];
   return (

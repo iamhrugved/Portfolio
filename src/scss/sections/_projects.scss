@@ -57,7 +57,7 @@
           position: absolute;
           width: 100%;
           height: 100%;
-          background-color: #9d00ff4d;
+          background-color: var(--image-overlay);
         }
         img {
           z-index: 0;
@@ -101,10 +101,12 @@
           display: flex;
           list-style-type: none;
           gap: 1rem;
+          width: 22rem;
           flex-wrap: wrap;
           &-item {
             color: var(--light-slate);
             font-family: var(--raleway);
+            font-weight: bolder;
           }
         }
         &-links {
@@ -165,6 +167,7 @@
 
           &-description {
             background-color: transparent;
+            font-size: var(--tsm1);
             p {
               padding: 0;
               text-align: start;
@@ -193,6 +196,9 @@
         .project-info {
           width: 500px;
           height: 300px;
+          &-description {
+            font-size: var(--tsm1);
+          }
         }
       }
     }

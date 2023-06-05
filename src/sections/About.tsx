@@ -40,6 +40,10 @@ function About() {
                         Bonjour! My name is Hrugved, and I am a Mechanical Engineer turned Software Engineer.
                         After graduating from University of Pune in India, I started my software development career at{" "}
                         <Link href="https://infosys.com" className="link" target="_blank">Infosys.</Link>
+                    </p>
+                    </Reveal>
+                    <Reveal>
+                    <p className="about-grid-info-text">
                         After completing the training at world&apos;s largest corporate training center at Mysore, India, I was ready to embark on my journey as a software engineer.
                         After spending about 2 years at Infosys, I decided to move to the United States to pursue my Masters in Software Engineering.
                     </p>
