@@ -34,7 +34,7 @@ function Contact() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-console.log(isMobile)
+
   return (
     <>
       <motion.div
