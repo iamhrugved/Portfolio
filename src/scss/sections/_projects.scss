@@ -169,7 +169,7 @@
           }
           &-description {
             background-color: transparent;
-            font-size: var(--tsm1);
+            font-size: var(--tsm);
             p {
               padding: 0;
               text-align: start;
@@ -178,6 +178,9 @@
           }
           &-tech-list-item {
             color: #ccd6f6;
+          }
+          &-links-item-link {
+            color: #a8b2d1;
           }
         }
         &:nth-of-type(even) {
@@ -202,9 +205,7 @@
         .project-info {
           width: 500px;
           height: 300px;
-          &-description {
-            font-size: var(--tsm1);
-          }
+          
         }
       }
     }
