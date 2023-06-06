@@ -73,7 +73,7 @@ function Home() {
                     delay: 1.35,
                 }}
             >
-                I carft things for the web.
+                I craft things for the web.
             </motion.h3>
             <motion.p
                 className="home-text"
