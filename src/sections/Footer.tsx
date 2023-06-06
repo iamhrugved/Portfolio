@@ -12,8 +12,7 @@ function Footer() {
         target="_blank"
         className="footer-link"
       >
-        <span className="footer-info">Designed and Built by Hrugved Pawar.</span>
-        
+        <span className="footer-info">Designed and Built by Hrugved Pawar and powered by Next.JS.</span>
       </Link>
     </footer>
   );

@@ -1,77 +1,101 @@
 import React from "react";
 import { motion } from "framer-motion";
-import BallCanvas from "./Ball";
+import TechCard from "./TechCard";
 
 const Tech = () => {
   const technologies = [
     {
       name: "Python",
-      icon: 'tech/python.png',
+      icon: '/tech/pythonIcon.png',
     },
     {
       name: 'Java',
-      icon: 'tech/java.png',
+      icon: '/tech/javaIcon.png',
     },
     {
       name: "C++",
-      icon: 'tech/cpp.png',
+      icon: '/tech/cppIcon.png',
     },
     {
       name: "JavaScript",
-      icon: 'tech/javascript.png',
+      icon: '/tech/javascriptIcon.png',
     },
     {
       name: "TypeScript",
-      icon: 'tech/typescript.png',
+      icon: '/tech/typescriptIcon.png',
     },
     {
       name: "Node JS",
-      icon: 'tech/nodejs.png',
+      icon: '/tech/nodejsIcon.png',
+    },
+    {
+      name: "Express JS",
+      icon: '/tech/expressjsIcon.png',
     },
     {
       name: "HTML 5",
-      icon: 'tech/html.png',
+      icon: '/tech/htmlIcon.png',
+    },
+    {
+      name: "CSS",
+      icon: '/tech/cssIcon.png',
     },
     {
       name: "SASS",
-      icon: 'tech/sass.png',
+      icon: '/tech/sassIcon.png',
     },
     {
       name: "Angular",
-      icon: 'tech/angular.png',
+      icon: '/tech/angularIcon.png',
     },
     {
       name: "React JS",
-      icon: 'tech/reactjs.png',
+      icon: '/tech/reactjsIcon.png',
+    },
+    {
+      name: "Redux",
+      icon: '/tech/reduxIcon.png',
     },
     {
       name: "Next JS",
-      icon: 'tech/nextjs.png',
+      icon: '/tech/nextjsIcon.png',
     },
     {
       name: "SQL",
-      icon: 'tech/sql.png',
+      icon: '/tech/sqlIcon.png',
     },
     {
       name: "MongoDB",
-      icon: 'tech/mongodb.png',
+      icon: '/tech/mongodbIcon.png',
     },
     {
       name: "Git",
-      icon: 'tech/git.png',
+      icon: '/tech/gitIcon.png',
     },
     {
       name: "AWS",
-      icon: 'tech/aws.png',
+      icon: '/tech/awsIcon.png',
+    },
+    {
+      name: "Firebase",
+      icon: '/tech/firebaseIcon.png',
     },
     {
       name: "Docker",
-      icon: 'tech/docker.png',
+      icon: '/tech/dockerIcon.png',
     },
+    {
+      name: "Jenkins",
+      icon: '/tech/jenkinsIcon.png',
+    },
+    {
+      name: "Jira",
+      icon: '/tech/jiraIcon.png',
+    }
   ];
   return (
     <motion.div
-      className='flex flex-row flex-wrap justify-center gap-10'
+      className='tech'
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
@@ -81,13 +105,9 @@ const Tech = () => {
         hidden: { opacity: 0, y: 0 },
       }}
     >
-      
-        {technologies.map((technology) => (
-          <div className='w-28 h-28' key={technology.name}>
-            <BallCanvas icon={technology.icon} />
-          </div>
-        ))}
-     
+      {technologies.map((technology) => (
+        <TechCard key={technology.name} technology={technology} />
+      ))}
     </motion.div>
   );
 };
