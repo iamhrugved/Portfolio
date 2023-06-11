@@ -15,6 +15,7 @@
     }
     .card-icon {
       display: block;
+      filter: drop-shadow(3px 3px 3px var(--theme-color));
     }
     
     @media screen and (max-width: 768px) {
