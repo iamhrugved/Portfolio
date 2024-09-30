@@ -58,6 +58,19 @@ function Projects() {
      
     },
     {
+      image: "/projects/ACN.png",
+      projectName: "AutoCraftNinja",
+      projectLink: "https://beta.autocraftninja.com/",
+      projectDescription:
+        "Introducing AutoCraftNinja, your all-in-one booking platform. Designed to streamline and simplify the booking process for various services, our app offers automated booking management, enhanced customer communication, and seamless payment processing. With features like WhatsApp business integration, automated reminders, and easy billing, we provide a convenient and efficient solution for businesses and customers alike.",
+      projectTech: [
+        "React",
+        "DynamoDB",
+        "React-Query",
+        "Springboot"
+      ],
+    },
+    {
       image: "/projects/litchatr.png",
       projectName: "Litchatr",
       projectLink: "https://github.com/iamhrugved/litchatr",

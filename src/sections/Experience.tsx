@@ -23,9 +23,11 @@ function Experience() {
             start: "Dec 2022",
             end: "Present",
             description: [
-                "Migrate UI of a Government Licensing Application from AngularJS to Angular14 to achieve performance improvement of 200%.",
-                "Developed 20 SQL queries for MySQL database and 13 Web APIs using ASP.NET and C# so far.",
-                "Detect and fix UI and infra bugs, fixed over 20 broken tests and expanded web test coverage to detect previously ignored frontend service and UI interaction bugs."
+                "Developed an ADA-compliant government web app for the California government. It reduced licensee application processing time by an hour and enabled paperless operations, streamlining the experience.",
+                "Contributed to migrating multiple government licensing board applications from AngularJS to Angular 14. Implemented new features recognized by multiple states, resulting in the app's adoption by over 8 states.",
+                "Optimized MySQL queries through refactoring and creating indexes, resulting in a 30% increase in data retrieval efficiency and a reduction in latency. This improvement enhanced the user experience by facilitating faster data retrieval and smoother UI interactions.",
+                "Streamlined the deployment process using Jenkins, establishing a deployment pipeline. This automation led to a 25% increase in deployment efficiency, saving time and resources.",
+                "Improved application quality by resolving critical bugs in multiple licensing web applications increasing reliability by 30%."
             ]
         },
         {
@@ -35,10 +37,10 @@ function Experience() {
             start: "Jun 2022",
             end: "Dec 2022",
             description: [
-                "Conceptualized and administered frontend development of a web-based video editing tool for hiding PII in accordance with FERPA regulations and to incorporate accessibility features catering to a total market cap of $500M+.",
-                "Visualized video data to enable users to hide faces and mute/anonymize voices by selecting custom masks on video player.",
+                "Developed a smart video tool for PII protection in accordance with FERPA regulations, detecting faces via video, audio, and text, and enhancing data privacy with customized masks.",
+                "Leveraged Google Cloud infrastructure for scalable and efficient video processing and data storage.",
                 "Designed 10+ cloud functions and pub-sub methods leveraging Firebase.",
-                "Optimized page performance by 3X by introducing virtual scrolling and lazy loading.",
+                "Optimized page performance by 3X by introducing virtual scrolling and lazy loading techniques and implemented horizontal scrolling.",
                 "Improved accessibility of a web-based application by 140% to make it VPAT compliant and drafted the HECVAT compliance report."
             ]
         },
